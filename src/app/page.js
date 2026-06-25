@@ -1,9 +1,21 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
-    <div className="hub-container" suppressHydrationWarning>
+    <div className="hub-container">
       <header className="hub-header">
         <h1 className="hub-title">Portfolio Collection</h1>
         <p className="hub-subtitle">
