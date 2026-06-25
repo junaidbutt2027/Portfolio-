@@ -2,28 +2,40 @@
   {
     "id": 1,
     "image": "/assets/images/model/blog/01.webp",
-    "date": { "day": "03", "month": "Dec", "year": "2026" },
-    "category": "Development",
-    "title": "One of the World Largest Passive House Buildings",
-    "readTime": "5 min read",
-    "description": "Exploration of energy efficient construction and state of the art architecture that meets the strict standards of passive building designs, delivering zero emissions and premium heat recycling loops."
+    "date": {
+      "day": "20",
+      "month": "Feb",
+      "year": "2026"
+    },
+    "category": "Java",
+    "title": "Building Scalable Microservices with Spring Boot",
+    "readTime": "7 min read",
+    "description": "A practical overview of developing scalable microservices using Java, Spring Boot, Spring Cloud, REST APIs, MySQL, and Microservices Architecture based on my professional experience."
   },
   {
     "id": 2,
     "image": "/assets/images/model/blog/02.webp",
-    "date": { "day": "03", "month": "Dec", "year": "2026" },
-    "category": "Development",
-    "title": "App Developer World Largest design House Buildings",
+    "date": {
+      "day": "15",
+      "month": "Jan",
+      "year": "2026"
+    },
+    "category": "FinTech",
+    "title": "Developing Secure FinTech Applications with Java",
     "readTime": "8 min read",
-    "description": "An inside look into design system collaboration frameworks, standardizing visual properties across frontend developers and graphic experts."
+    "description": "Sharing my experience developing secure financial applications including RAAST, IBFT, customer services, debit card transactions, and REST APIs while working as a Java Backend Engineer."
   },
   {
     "id": 3,
     "image": "/assets/images/model/blog/03.webp",
-    "date": { "day": "03", "month": "Dec", "year": "2026" },
-    "category": "Development",
-    "title": "Graphic One of the World Largest Passive House Buildings",
+    "date": {
+      "day": "10",
+      "month": "Dec",
+      "year": "2025"
+    },
+    "category": "Backend",
+    "title": "REST API Best Practices in Spring Boot",
     "readTime": "6 min read",
-    "description": "Evaluating performance metrics and responsive assets layout strategies that reduce initial render times while delivering stunning graphic layouts."
+    "description": "Learn how to design secure, maintainable, and high-performance REST APIs using Spring Boot, Spring Data JPA, JWT authentication, exception handling, and clean architecture."
   }
 ]
