@@ -1,0 +1,18 @@
+{
+  "name": "John Abram",
+  "subtitle": "Welcome To My World",
+  "titleLine1": "I Design & Build",
+  "titleLine2": "Unique Product.",
+  "description": "I am a passionate and versatile content creator dedicated to crafting compelling narratives, engaging visuals, and impactful messages.",
+  "cvLink": "/developer#",
+  "contactLink": "/developer#",
+  "mainImage": "assets/images/developer/banner-1.webp",
+  "shapeImage1": "assets/images/technician/banner/shape-3.svg",
+  "shapeImage2": "assets/images/technician/banner/man-shape-behind.svg",
+  "socials": [
+    { "platform": "facebook", "url": "https://facebook.com", "icon": "fab fa-facebook-f" },
+    { "platform": "twitter", "url": "https://twitter.com", "icon": "fab fa-twitter" },
+    { "platform": "linkedin", "url": "https://linkedin.com", "icon": "fab fa-linkedin" },
+    { "platform": "instagram", "url": "https://instagram.com", "icon": "fab fa-instagram" }
+  ]
+}

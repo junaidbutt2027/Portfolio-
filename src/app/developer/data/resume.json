@@ -1,0 +1,30 @@
+{
+  "education": [
+    {
+      "year": "2015 - 2019",
+      "name": "BS in Computer Science of SE",
+      "program": "Undergraduate Programs",
+      "grade": "3.50/5"
+    },
+    {
+      "year": "2015 - 2019",
+      "name": "BS in Computer Science of SE",
+      "program": "Undergraduate Programs",
+      "grade": "3.50/5"
+    }
+  ],
+  "experience": [
+    {
+      "year": "2015 - 2019",
+      "name": "Google Marketing Officer",
+      "program": "United States Calefornia",
+      "grade": "4 Year"
+    },
+    {
+      "year": "2015 - 2019",
+      "name": "Grameenphone Engineer",
+      "program": "United Kingdom",
+      "grade": "3 Year"
+    }
+  ]
+}

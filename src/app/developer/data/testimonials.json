@@ -1,0 +1,46 @@
+{
+  "summary": {
+    "image": "assets/images/developer/testimonial.png",
+    "rating": "4.5",
+    "description": "Average 500+ Reviews in My portfolio. \n This review will be impressed to You."
+  },
+  "reviews": [
+    {
+      "quote": "I hope this message finds you well. I wanted to take a moment to provide some feedback on the recent project we collaborated on. Overall, I am extremely pleased with the outcome. Overall, I am extremely pleased with the outcome .",
+      "rating": 4.5,
+      "author": {
+        "image": "assets/images/technician/testimonial/ta-1.jpg",
+        "name": "John Due",
+        "designation": "Lead Manager"
+      }
+    },
+    {
+      "quote": "I hope this message finds you well. I wanted to take a moment to provide some feedback on the recent project we collaborated on. Overall, I am extremely pleased with the outcome. Overall, I am extremely pleased with the outcome .",
+      "rating": 4.5,
+      "author": {
+        "image": "assets/images/technician/testimonial/ta-1.jpg",
+        "name": "John Due",
+        "designation": "Lead Manager"
+      }
+    },
+    {
+      "quote": "I hope this message finds you well. I wanted to take a moment to provide some feedback on the recent project we collaborated on. Overall, I am extremely pleased with the outcome. Overall, I am extremely pleased with the outcome .",
+      "rating": 4.5,
+      "author": {
+        "image": "assets/images/technician/testimonial/ta-1.jpg",
+        "name": "John Due",
+        "designation": "Lead Manager"
+      }
+    }
+  ],
+  "brands": [
+    "assets/images/technician/brand/1.svg",
+    "assets/images/technician/brand/2.svg",
+    "assets/images/technician/brand/3.svg",
+    "assets/images/technician/brand/4.svg",
+    "assets/images/technician/brand/5.svg",
+    "assets/images/technician/brand/6.svg",
+    "assets/images/technician/brand/7.svg",
+    "assets/images/technician/brand/8.svg"
+  ]
+}

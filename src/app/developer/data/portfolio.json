@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "title": "With Composition API, we define a component's logic using",
+    "displayCategory": "figma & photoshop",
+    "categories": ["figma", "photoshop"],
+    "image": "assets/images/main/work/01.webp",
+    "displacement": "/assets/images/main/stripe.webp"
+  },
+  {
+    "id": "2",
+    "title": "With Composition API, we define a component's logic using",
+    "displayCategory": "figma & photoshop",
+    "categories": ["figma", "photoshop"],
+    "image": "assets/images/main/work/02.webp",
+    "displacement": "/assets/images/main/stripe.webp"
+  },
+  {
+    "id": "3",
+    "title": "Both API styles are fully capable of covering common use cases.",
+    "displayCategory": "photoshop and Adobe xd",
+    "categories": ["web", "figma", "photoshop"],
+    "image": "assets/images/main/work/03.webp",
+    "displacement": "/assets/images/main/stripe.webp"
+  },
+  {
+    "id": "4",
+    "title": "You don't have to commit to only one style during the learning phase.",
+    "displayCategory": "WEB DESIGN DEVELOPMENT",
+    "categories": ["web", "react"],
+    "image": "assets/images/main/work/04.webp",
+    "displacement": "/assets/images/main/stripe.webp"
+  }
+]

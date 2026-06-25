@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/images/freelancer/portfolio/1.jpg",
+    "title": "Emergency Medical Care",
+    "displayCategory": "HTML",
+    "categories": ["web", "ui", "mern"],
+    "description": "Designing intuitive dashboards and client portals for medical emergency units, optimizing workflow and priority support.",
+    "client": "MedCare Inc.",
+    "services": "Web Design",
+    "projectDate": "October 2025",
+    "previewLink": "https://example.com"
+  },
+  {
+    "id": 2,
+    "image": "/assets/images/freelancer/portfolio/4.jpg",
+    "title": "Both API styles are fully",
+    "displayCategory": "HTML",
+    "categories": ["web", "ui", "mern"],
+    "description": "Integration of Options and Composition API setups under modern UI layouts for scalable client portfolios.",
+    "client": "Vue Devs Hub",
+    "services": "Web Development",
+    "projectDate": "November 2025",
+    "previewLink": "https://example.com"
+  },
+  {
+    "id": 3,
+    "image": "/assets/images/freelancer/portfolio/2.jpg",
+    "title": "With Composition API",
+    "displayCategory": "React",
+    "categories": ["web", "ui", "mern"],
+    "description": "React hook and custom state architecture mimicking composition paradigms to build interactive client solutions.",
+    "client": "Innovate LLC",
+    "services": "MERN Stack",
+    "projectDate": "December 2025",
+    "previewLink": "https://example.com"
+  },
+  {
+    "id": 4,
+    "image": "/assets/images/freelancer/portfolio/5.jpg",
+    "title": "You don't have to commit",
+    "displayCategory": "App Development",
+    "categories": ["web", "ui", "mern"],
+    "description": "A lightweight application framework that allows incremental adoption without committing to major updates.",
+    "client": "Alpha Tech",
+    "services": "Mobile Design",
+    "projectDate": "January 2026",
+    "previewLink": "https://example.com"
+  },
+  {
+    "id": 5,
+    "image": "/assets/images/freelancer/portfolio/1.jpg",
+    "title": "Both API styles are fully",
+    "displayCategory": "JavaScript",
+    "categories": ["web", "ui"],
+    "description": "Advanced client interaction bindings utilizing custom vanilla Javascript events and optimized event delegation.",
+    "client": "ByteCorp",
+    "services": "Interaction Design",
+    "projectDate": "February 2026",
+    "previewLink": "https://example.com"
+  },
+  {
+    "id": 6,
+    "image": "/assets/images/freelancer/portfolio/6.jpg",
+    "title": "Covering common use cases",
+    "displayCategory": "Graphic Design",
+    "categories": ["web", "ui", "mern"],
+    "description": "Curating dynamic visual guidelines and branding sets that fulfill primary marketing and digital layout demands.",
+    "client": "Creative Flow",
+    "services": "Graphic Design",
+    "projectDate": "March 2026",
+    "previewLink": "https://example.com"
+  }
+]

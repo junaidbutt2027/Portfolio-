@@ -1,0 +1,49 @@
+{
+  "specializations": [
+    {
+      "icon": "/assets/images/icons/service/1.svg",
+      "title": "Web Development",
+      "description": "This is a fictional personal portfolio crafted as an example your actual skills, experiences.",
+      "ariaLabel": "Web Development"
+    },
+    {
+      "icon": "/assets/images/icons/service/2.svg",
+      "title": "Vue js Application",
+      "description": "Vue Js allows developers to break down UIs into reusable components build.",
+      "ariaLabel": "Vue js Application"
+    },
+    {
+      "icon": "/assets/images/icons/service/3.svg",
+      "title": "WordPress Theme",
+      "description": "Create a place for your business, your interests, or anything else with the open source.",
+      "ariaLabel": "WordPress Theme"
+    },
+    {
+      "icon": "/assets/images/icons/service/4.svg",
+      "title": "Why Angular JS",
+      "description": "HTML is great for declaring static documents, but it falters when we try to use it for.",
+      "ariaLabel": "Why Angular JS"
+    },
+    {
+      "icon": "/assets/images/icons/service/5.svg",
+      "title": "Website Build",
+      "description": "This is a fictional personal portfolio crafted as an example your actual skills, experiences.",
+      "ariaLabel": "Website Build"
+    },
+    {
+      "icon": "/assets/images/icons/service/6.svg",
+      "title": "Postman platform",
+      "description": "Postman is an API platform for building and using APIs. Postman simplifies each step.",
+      "ariaLabel": "Postman platform"
+    }
+  ],
+  "sliderItems": [
+    { "icon": "/assets/images/main/service/slider/1.svg", "title": "Demo Install" },
+    { "icon": "/assets/images/main/service/slider/2.svg", "title": "React Setup" },
+    { "icon": "/assets/images/main/service/slider/3.svg", "title": "Logo Design" },
+    { "icon": "/assets/images/main/service/slider/4.svg", "title": "Figma Design" },
+    { "icon": "/assets/images/main/service/slider/5.svg", "title": "XD Design" },
+    { "icon": "/assets/images/main/service/slider/6.svg", "title": "Painting" },
+    { "icon": "/assets/images/main/service/slider/7.svg", "title": "React Ready" }
+  ]
+}

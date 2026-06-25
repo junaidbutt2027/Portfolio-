@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Web Design",
+    "icon": "assets/images/technician/skill/figma.svg",
+    "percentage": "85%"
+  },
+  {
+    "name": "adobe photoshop",
+    "icon": "assets/images/technician/skill/photoshop.svg",
+    "percentage": "100%"
+  },
+  {
+    "name": "xd Design",
+    "icon": "assets/images/technician/skill/xd.svg",
+    "percentage": "85%"
+  },
+  {
+    "name": "Ai generator",
+    "icon": "assets/images/technician/skill/ai.svg",
+    "percentage": "65%"
+  },
+  {
+    "name": "react native",
+    "icon": "assets/images/technician/skill/react.svg",
+    "percentage": "85%"
+  },
+  {
+    "name": "postman tools",
+    "icon": "assets/images/technician/skill/postman.svg",
+    "percentage": "56%"
+  }
+]

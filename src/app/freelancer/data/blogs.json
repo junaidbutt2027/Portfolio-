@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/images/model/blog/01.webp",
+    "date": { "day": "03", "month": "Dec", "year": "2026" },
+    "category": "Development",
+    "title": "One of the World Largest Passive House Buildings",
+    "readTime": "5 min read",
+    "description": "Exploration of energy efficient construction and state of the art architecture that meets the strict standards of passive building designs, delivering zero emissions and premium heat recycling loops."
+  },
+  {
+    "id": 2,
+    "image": "/assets/images/model/blog/02.webp",
+    "date": { "day": "03", "month": "Dec", "year": "2026" },
+    "category": "Development",
+    "title": "App Developer World Largest design House Buildings",
+    "readTime": "8 min read",
+    "description": "An inside look into design system collaboration frameworks, standardizing visual properties across frontend developers and graphic experts."
+  },
+  {
+    "id": 3,
+    "image": "/assets/images/model/blog/03.webp",
+    "date": { "day": "03", "month": "Dec", "year": "2026" },
+    "category": "Development",
+    "title": "Graphic One of the World Largest Passive House Buildings",
+    "readTime": "6 min read",
+    "description": "Evaluating performance metrics and responsive assets layout strategies that reduce initial render times while delivering stunning graphic layouts."
+  }
+]

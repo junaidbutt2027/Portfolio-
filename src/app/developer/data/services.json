@@ -1,0 +1,38 @@
+[
+  {
+    "title": "WordPress Demo Setup",
+    "icon": "assets/images/icons/wordpress.svg",
+    "ariaLabel": "wordpress",
+    "description": "This is a fictional personal portfolio crafted as an example your actual skills, experiences."
+  },
+  {
+    "title": "React Router Dom",
+    "icon": "assets/images/icons/react.svg",
+    "ariaLabel": "react",
+    "description": "React encourages a declarative programming style, where developers describe the."
+  },
+  {
+    "title": "What is Vue for next",
+    "icon": "assets/images/icons/vue.svg",
+    "ariaLabel": "vue",
+    "description": "It builds on top of standard HTML, CSS, and JavaScript and provides a declarative, component-based."
+  },
+  {
+    "title": "Photo Edit With Adobe XD",
+    "icon": "assets/images/icons/xd.svg",
+    "ariaLabel": "xd",
+    "description": "Our online logo maker lets you generate designs perfectly suited to your business from a professionally."
+  },
+  {
+    "title": "Figma Web Page Design",
+    "icon": "assets/images/icons/figma.svg",
+    "ariaLabel": "figma",
+    "description": "Figma is the leading collaborative design tool for building meaningful products. Seamlessly design."
+  },
+  {
+    "title": "Photoshop Logo Design",
+    "icon": "assets/images/icons/design.svg",
+    "ariaLabel": "design",
+    "description": "Try it free, no obligation! Millions of customers love our logo maker. Premium logo designs created."
+  }
+]

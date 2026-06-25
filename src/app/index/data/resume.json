@@ -1,0 +1,91 @@
+{
+  "education": [
+    {
+      "time": "2015 - 2019",
+      "grade": "3.50/5",
+      "title": "Bachelor Degree in Marketing",
+      "subtitle": "University of Calefornia"
+    },
+    {
+      "time": "2015 - 2019",
+      "grade": "3.50/5",
+      "title": "BBA Major in Finance in (BBA)",
+      "subtitle": "Undergraduate Programs"
+    },
+    {
+      "time": "2015 - 2019",
+      "grade": "3.50/5",
+      "title": "BS in Computer Science of SE",
+      "subtitle": "University of USA"
+    },
+    {
+      "time": "2015 - 2019",
+      "grade": "3.50/5",
+      "title": "BBA Major in Accounting BBA",
+      "subtitle": "University of Uk/London"
+    }
+  ],
+  "experience": [
+    {
+      "time": "2015 - 2019",
+      "grade": "4 Year",
+      "title": "Google Marketing Officer",
+      "subtitle": "United States Calefornia"
+    },
+    {
+      "time": "2015 - 2019",
+      "grade": "4 Year",
+      "title": "BS in Computer Science of SE",
+      "subtitle": "Undergraduate Programs"
+    }
+  ],
+  "interviews": [
+    {
+      "icon": "/assets/images/main/interview/1.svg",
+      "title": "Whatsapp App",
+      "date": "2015-2019"
+    },
+    {
+      "icon": "/assets/images/main/interview/2.svg",
+      "title": "Vimeo Develop",
+      "date": "2022-2024"
+    },
+    {
+      "icon": "/assets/images/main/interview/3.svg",
+      "title": "Google Support",
+      "date": "2022-2024"
+    },
+    {
+      "icon": "/assets/images/main/interview/4.svg",
+      "title": "Banglalink App",
+      "date": "2015-2019"
+    }
+  ],
+  "skills": [
+    { "name": "PhotoShop", "percentage": "80%" },
+    { "name": "Figma", "percentage": "90%" },
+    { "name": "Wordpress", "percentage": "70%" },
+    { "name": "Adobe XD", "percentage": "80%" }
+  ],
+  "skillsMarque": [
+    { "name": "figma", "icon": "/assets/images/main/skill/figma.svg" },
+    { "name": "photoshop", "icon": "/assets/images/main/skill/photoshop.svg" },
+    { "name": "xd", "icon": "/assets/images/main/skill/xd.svg" },
+    { "name": "react", "icon": "/assets/images/main/skill/react.svg" },
+    { "name": "in", "icon": "/assets/images/main/skill/in.svg" }
+  ],
+  "funfacts": [
+    { "count": "10", "suffix": "+", "label": "Complete Projects" },
+    { "count": "15", "suffix": "+", "label": "Happy Clients" },
+    { "count": "20", "suffix": "K", "label": "Real Projects" },
+    { "count": "55", "suffix": "+", "label": "Awesome Clients" },
+    { "count": "99", "suffix": "K", "label": "Pending Projects" },
+    { "count": "70", "suffix": "+", "label": "React Templates" }
+  ],
+  "stayWithMe": {
+    "title": "Stay With Me",
+    "icon": "fa-solid fa-headset",
+    "buttonText": "Get in Touch",
+    "buttonLink": "/contact"
+  }
+}

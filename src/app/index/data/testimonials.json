@@ -1,0 +1,92 @@
+{
+  "topMarque": [
+    {
+      "rating": 5,
+      "quote": "Good feedback is a crucial aspect of any business's growth strategy. It offers valuable insights into customer satisfaction, identifies areas for improvement, and helps relationships.",
+      "author": {
+        "name": "John Due",
+        "designation": "Lead Manager",
+        "image": "/assets/images/technician/testimonial/ta-1.jpg"
+      }
+    },
+    {
+      "rating": 5,
+      "quote": "Modern feedback is a crucial aspect of any business's growth strategy. It offers valuable insights into customer satisfaction, identifies areas for improvement, and helps relationships.",
+      "author": {
+        "name": "Jack Devis",
+        "designation": "Lead Manager",
+        "image": "/assets/images/technician/testimonial/ta-2.jpg"
+      }
+    },
+    {
+      "rating": 5,
+      "quote": "Quality feedback plays a major role in how we optimize our visual guidelines, improve user interactions, and establish solid brand footprints.",
+      "author": {
+        "name": "Jane Adams",
+        "designation": "Product Manager",
+        "image": "/assets/images/technician/testimonial/ta-3.jpg"
+      }
+    }
+  ],
+  "bottomMarque": [
+    {
+      "rating": 5,
+      "quote": "Mypani feedback is a crucial aspect of any business's growth strategy. It offers valuable insights into customer satisfaction, identifies areas for improvement, and helps relationships.",
+      "author": {
+        "name": "Mypani",
+        "designation": "Lead Manager",
+        "image": "/assets/images/technician/testimonial/ta-6.jpg"
+      }
+    },
+    {
+      "rating": 5,
+      "quote": "Professional client alignment and regular updates ensure every dashboard layout hits the target audience perfectly, lowering bounce rates.",
+      "author": {
+        "name": "Sarah Miller",
+        "designation": "Director of Growth",
+        "image": "/assets/images/technician/testimonial/ta-4.jpg"
+      }
+    },
+    {
+      "rating": 5,
+      "quote": "The engineering efficiency and design execution exceeded all our baseline project scope objectives, paving the way for further integrations.",
+      "author": {
+        "name": "David Clark",
+        "designation": "VP Engineering",
+        "image": "/assets/images/technician/testimonial/ta-5.jpg"
+      }
+    }
+  ],
+  "clientTestimonials": [
+    {
+      "quote": "“Their expertise and commitment to excellence are truly commendable. We highly <span>recommend them</span> to anyone seeking top-notch service and outstanding results. Thank you for a job well done”",
+      "author": {
+        "name": "Charles E Eusa",
+        "designation": "Tech Lead @ Officer",
+        "image": "/assets/images/main/testimonial/1.jpg"
+      },
+      "videoUrl": "https://www.youtube.com/watch?v=pQpFebyALV0",
+      "displacement": "/assets/images/main/stripe.webp"
+    },
+    {
+      "quote": "“Their expertise and commitment to excellence are truly commendable. We highly <span>recommend them</span> to anyone seeking top-notch service and outstanding results. Thank you for a job well done”",
+      "author": {
+        "name": "Charles E Eusa",
+        "designation": "Tech Lead @ Officer",
+        "image": "/assets/images/main/testimonial/01.webp"
+      },
+      "videoUrl": "https://www.youtube.com/watch?v=pQpFebyALV0",
+      "displacement": "/assets/images/main/stripe.webp"
+    }
+  ],
+  "brands": [
+    "/assets/images/technician/brand/1.svg",
+    "/assets/images/technician/brand/2.svg",
+    "/assets/images/technician/brand/3.svg",
+    "/assets/images/technician/brand/4.svg",
+    "/assets/images/technician/brand/5.svg",
+    "/assets/images/technician/brand/6.svg",
+    "/assets/images/technician/brand/7.svg",
+    "/assets/images/technician/brand/8.svg"
+  ]
+}
