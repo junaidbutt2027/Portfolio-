@@ -67,7 +67,7 @@ export default function Home() {
               A comprehensive landing page showcasing specializations, services, portfolio collections,
               educational/work history, client reviews, and all separate demo listings.
             </p>
-            <Link href="/index" className="hub-btn btn-main">
+            <Link href="/main" className="hub-btn btn-main">
               Open Layout
             </Link>
           </div>

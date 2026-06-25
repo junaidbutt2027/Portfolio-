@@ -118,19 +118,19 @@ export default function IndexPage() {
                                   <nav className="navbar-example2 onepagenav">
                                       <ul className="tmp-mainmenu nav nav-pills">
                                           <li><a href="/" className="external">Dashboard</a></li>
-                                          <li className="current"><a className="smoth-animation" href="/index#home">Home</a></li>
-                                          <li><a className="smoth-animation" href="/index#service">Services</a></li>
-                                          <li><a className="smoth-animation" href="/index#portfolio">Portfolio</a></li>
-                                          <li><a className="smoth-animation" href="/index#blog">Blog</a></li>
-                                          <li><a className="smoth-animation" href="/index#contact">Contact</a></li>
+                                          <li className="current"><a className="smoth-animation" href="/main#home">Home</a></li>
+                                          <li><a className="smoth-animation" href="/main#service">Services</a></li>
+                                          <li><a className="smoth-animation" href="/main#portfolio">Portfolio</a></li>
+                                          <li><a className="smoth-animation" href="/main#blog">Blog</a></li>
+                                          <li><a className="smoth-animation" href="/main#contact">Contact</a></li>
                                       </ul>
                                   </nav>
                               </nav>
                               <div className="header-btn tmp-button-group d-flex align-items-center">
-                                  <a className="tmp-btn btn-border tmp-switch-btn btn-sm hover-transform-none radius-round d-none d-sm-block" href="/index#contact">
+                                  <a className="tmp-btn btn-border tmp-switch-btn btn-sm hover-transform-none radius-round d-none d-sm-block" href="/main#contact">
                                       <span data-text="Let’s Talk">Let’s Talk</span>
                                   </a>
-                                  <a className="tmp-btn tmp-switch-btn btn-sm hover-transform-none radius-round" href="/index#contact">
+                                  <a className="tmp-btn tmp-switch-btn btn-sm hover-transform-none radius-round" href="/main#contact">
                                       <span data-text="Join Now">Join Now</span>
                                   </a>
                               </div>
@@ -165,13 +165,13 @@ export default function IndexPage() {
 
                   <ul className="tmp-mainmenu onepagenav-click">
                       <li><a href="/" className="external">Dashboard</a></li>
-                      <li><a className="smoth-animation" href="/index#home">Home</a></li>
-                      <li><a className="smoth-animation" href="/index#service">Services</a></li>
-                      <li><a className="smoth-animation" href="/index#portfolio">Portfolio</a></li>
-                      <li><a className="smoth-animation" href="/index#resume">Resume</a></li>
-                      <li><a className="smoth-animation" href="/index#pricing">Pricing</a></li>
-                      <li><a className="smoth-animation" href="/index#blog">Blog</a></li>
-                      <li><a className="smoth-animation" href="/index#contacts">Contact</a></li>
+                      <li><a className="smoth-animation" href="/main#home">Home</a></li>
+                      <li><a className="smoth-animation" href="/main#service">Services</a></li>
+                      <li><a className="smoth-animation" href="/main#portfolio">Portfolio</a></li>
+                      <li><a className="smoth-animation" href="/main#resume">Resume</a></li>
+                      <li><a className="smoth-animation" href="/main#pricing">Pricing</a></li>
+                      <li><a className="smoth-animation" href="/main#blog">Blog</a></li>
+                      <li><a className="smoth-animation" href="/main#contacts">Contact</a></li>
                   </ul>
 
                   <div className="social-wrapper mt--40">
@@ -446,7 +446,7 @@ export default function IndexPage() {
                                                   <span className="time">{edu.time}</span>
                                                   <span className="skill-grade">{edu.grade}</span>
                                               </div>
-                                              <h4 className="title h5"><a href="/index#">{edu.title}</a></h4>
+                                              <h4 className="title h5"><a href="/main#">{edu.title}</a></h4>
                                               <p className="subtitle">{edu.subtitle}</p>
                                           </div>
                                       ))}
@@ -458,7 +458,7 @@ export default function IndexPage() {
                                                   <span className="time">{edu.time}</span>
                                                   <span className="skill-grade">{edu.grade}</span>
                                               </div>
-                                              <h4 className="title h5"><a href="/index#">{edu.title}</a></h4>
+                                              <h4 className="title h5"><a href="/main#">{edu.title}</a></h4>
                                               <p className="subtitle">{edu.subtitle}</p>
                                           </div>
                                       ))}
@@ -512,7 +512,7 @@ export default function IndexPage() {
                                                       <span className="time">{exp.time}</span>
                                                       <span className="skill-grade">{exp.grade}</span>
                                                   </div>
-                                                  <h4 className="title h5"><a href="/index#">{exp.title}</a></h4>
+                                                  <h4 className="title h5"><a href="/main#">{exp.title}</a></h4>
                                                   <p className="subtitle">{exp.subtitle}</p>
                                               </div>
                                           ))}
@@ -539,7 +539,7 @@ export default function IndexPage() {
                                                   <img src={item.icon} alt="" />
                                               </div>
                                               <div className="tmp-ivi-content">
-                                                  <h4 className="h6 tmp-ivi-title fw-bold mb-0"><a href="/index#">{item.title}</a></h4>
+                                                  <h4 className="h6 tmp-ivi-title fw-bold mb-0"><a href="/main#">{item.title}</a></h4>
                                                   <span className="tmp-ivi-date">{item.date}</span>
                                               </div>
                                           </div>
@@ -881,7 +881,7 @@ export default function IndexPage() {
                       {testimonialsData.brands && testimonialsData.brands.map((brand, idx) => (
                           <div key={idx} className={`col-xl-3 col-lg-3 col-md-4 col-sm-6 tmp-scroll-trigger tmp-fade-in animation-order-${idx + 1}`}>
                               <div className="tmp-client-card text-center">
-                                  <a href="/index#" aria-label="client">
+                                  <a href="/main#" aria-label="client">
                                       <img src={brand} alt="" />
                                   </a>
                               </div>
@@ -1130,11 +1130,11 @@ export default function IndexPage() {
                               </div>
                               <div className="tmp-widget-menu">
                                   <ul className="list-unstyled mb-0 link-hover-animation">
-                                      <li><a href="/index#" aria-label="About Me">About Me</a></li>
-                                      <li><a href="/index#" aria-label="Photoshop">Photoshop</a></li>
-                                      <li><a href="/index#" aria-label="Database">Database</a></li>
-                                      <li><a href="/index#" aria-label="Figma Design">Figma Design</a></li>
-                                      <li><a href="/index#" aria-label="Adobe XD">Adobe XD</a></li>
+                                      <li><a href="/main#" aria-label="About Me">About Me</a></li>
+                                      <li><a href="/main#" aria-label="Photoshop">Photoshop</a></li>
+                                      <li><a href="/main#" aria-label="Database">Database</a></li>
+                                      <li><a href="/main#" aria-label="Figma Design">Figma Design</a></li>
+                                      <li><a href="/main#" aria-label="Adobe XD">Adobe XD</a></li>
                                   </ul>
                               </div>
                           </div>
@@ -1145,11 +1145,11 @@ export default function IndexPage() {
                               </div>
                               <div className="tmp-widget-menu">
                                   <ul className="list-unstyled mb-0 link-hover-animation">
-                                      <li><a href="/index#" aria-label="Support Center">Support Center</a></li>
-                                      <li><a href="/index#" aria-label="Terms of My Service">Terms of My Service</a></li>
-                                      <li><a href="/index#" aria-label="Privacy and Policyl">Privacy and Policy</a></li>
-                                      <li><a href="/index#" aria-label="React Router">React Router</a></li>
-                                      <li><a href="/index#" aria-label="Photoshop Design">Photoshop Design</a></li>
+                                      <li><a href="/main#" aria-label="Support Center">Support Center</a></li>
+                                      <li><a href="/main#" aria-label="Terms of My Service">Terms of My Service</a></li>
+                                      <li><a href="/main#" aria-label="Privacy and Policyl">Privacy and Policy</a></li>
+                                      <li><a href="/main#" aria-label="React Router">React Router</a></li>
+                                      <li><a href="/main#" aria-label="Photoshop Design">Photoshop Design</a></li>
                                   </ul>
                               </div>
                           </div>
@@ -1160,11 +1160,11 @@ export default function IndexPage() {
                               </div>
                               <div className="tmp-widget-menu">
                                   <ul className="list-unstyled mb-0 link-hover-animation">
-                                      <li><a href="/index#" aria-label="Contact">Contact Me</a></li>
-                                      <li><a href="/index#" aria-label="About Me">About Me</a></li>
-                                      <li><a href="/index#" aria-label="Management">Management</a></li>
-                                      <li><a href="/index#" aria-label="Support Policy">Support Policy</a></li>
-                                      <li><a href="/index#" aria-label="Adobe XD">Adobe XD</a></li>
+                                      <li><a href="/main#" aria-label="Contact">Contact Me</a></li>
+                                      <li><a href="/main#" aria-label="About Me">About Me</a></li>
+                                      <li><a href="/main#" aria-label="Management">Management</a></li>
+                                      <li><a href="/main#" aria-label="Support Policy">Support Policy</a></li>
+                                      <li><a href="/main#" aria-label="Adobe XD">Adobe XD</a></li>
                                   </ul>
                               </div>
                           </div>

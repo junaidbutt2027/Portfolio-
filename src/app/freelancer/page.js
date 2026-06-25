@@ -129,10 +129,10 @@ export default function FreelancerPage() {
                                     </nav>
                                 </nav>
                                 <div className="header-btn tmp-button-group d-flex align-items-center">
-                                    <a className="tmp-btn btn-border tmp-switch-btn btn-sm hover-transform-none radius-round d-none d-sm-block" href="/index#contact">
+                                    <a className="tmp-btn btn-border tmp-switch-btn btn-sm hover-transform-none radius-round d-none d-sm-block" href="/main#contact">
                                         <span data-text="Let’s Talk">Let’s Talk</span>
                                     </a>
-                                    <a className="tmp-btn tmp-switch-btn btn-sm hover-transform-none radius-round" href="/index#contact">
+                                    <a className="tmp-btn tmp-switch-btn btn-sm hover-transform-none radius-round" href="/main#contact">
                                         <span data-text="Join Now">Join Now</span>
                                     </a>
                                 </div>
