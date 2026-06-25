@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Premium Next.js Portfolio Collection
 
-## Getting Started
+A highly optimized, responsive, and modern React & Next.js collection of premium portfolio templates. This project provides three distinct layouts catering to developers, designers, writers, and freelancers, serving as a unified platform to showcase projects, skills, history, and publications.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Layout Previews
+
+The project features a sleek collection launcher at `/` that lets users preview the three layout themes:
+
+### 1. 💻 Developer Portfolio (`/developer`)
+* **Theme**: Deep Technical Dark Mode
+* **Target Audience**: Software Engineers, Technical Product Builders, Full Stack Creators
+* **Highlights**: Tech-stack proficiency bars, education/work interactive grids, technical blog categories.
+
+### 2. 🎨 Freelancer Portfolio (`/freelancer`)
+* **Theme**: Modern Creative Light Mode
+* **Target Audience**: UI/UX Designers, Independent Contractors, Illustrators
+* **Highlights**: Dynamic marquee highlights, achievement badges, pricing packages (Basic/Standard/Premium), creative publications layout.
+
+### 3. 🌐 Main Portfolio Showcase (`/index`)
+* **Theme**: Vibrant Glassmorphism Gradient Mode
+* **Target Audience**: General Creative Professionals & Agency Leads
+* **Highlights**: Sliding testimonial carousels, trusted brand sections, detailed achievements counters, floating widgets.
+
+---
+
+## 🛠️ Tech Stack & Key Features
+
+* **Framework**: [Next.js](https://nextjs.org/) (React, App Router, Turbopack support)
+* **Styling**: Vanilla CSS with custom premium tokens, smooth animations (WOW, gsap, ScrollTrigger), and full responsiveness.
+* **Hydration-Safe Preloader**: State-controlled, animated pre-split loading screen that fades out smoothly once React finishes client-side mounting.
+* **Crash-Safe Third Party Integrations**: Main initialization scripts wrap asynchronous plugins (Swiper, LightGallery, Typed, ScrollTrigger) inside defensive try-catch containers to guarantee stable interactivity regardless of loading order.
+* **No Hardcoded Details**: The layout structures are entirely data-driven, rendering dynamic content directly from structured JSON databases.
+
+---
+
+## 📂 Project Structure & Architecture
+
+```text
+portfolio/
+├── public/                 # Static assets (images, logos, vendor scripts)
+│   └── assets/
+│       ├── css/            # Style sheets (style.css, bootstrap, and plugins)
+│       └── js/             # Main interactive scripts & plugins
+├── src/
+│   └── app/
+│       ├── page.js         # Collection Dashboard Launcher
+│       ├── layout.js       # Global document layout & script scripts
+│       ├── globals.css     # Dashboard styling overrides
+│       │
+│       ├── developer/      # Developer Portfolio Route
+│       │   ├── data/       # Dynamic JSON content configurations
+│       │   └── page.js     
+│       │
+│       ├── freelancer/     # Freelancer Portfolio Route
+│       │   ├── data/       # Dynamic JSON content configurations
+│       │   └── page.js     
+│       │
+│       └── index/          # Main Home Route
+│           ├── data/       # Dynamic JSON content configurations
+│           └── page.js     
+└── package.json            
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ⚙️ Content Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+You can fully customize the content of any layout without touching code by editing the JSON data configurations under `src/app/[layout]/data/`:
 
-## Learn More
+| Layout Data File | Content Configured |
+| :--- | :--- |
+| `hero.json` | Profile name, titles, subtitles, socials, marquee lists, and background shapes. |
+| `services.json` | Services grid details, cards description, packages list. |
+| `portfolio.json` | Project list including title, images, categories, details, date, and likes. |
+| `resume.json` | Job experience history, educational credentials, and skill levels (percentages). |
+| `testimonials.json` | Client quotes, reviewer details, ratings, and trusted corporate brand logo arrays. |
+| `blogs.json` | Recent article records, read-time data, and categorization tags. |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💻 Local Setup & Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 1. Install Dependencies
+Run the command below inside the `portfolio` folder to install the project dependencies:
+```bash
+bun install
+# or
+npm install
+```
 
-## Deploy on Vercel
+### 2. Start the Development Server
+Launch the local server:
+```bash
+bun run dev
+# or
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the collection launcher.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Build & Production Check
+Generate an optimized production build:
+```bash
+bun run build && bun start
+# or
+npm run build && npm run start
+```
+
+---
+
+## ☁️ Deployment
+
+Deploy this template easily on **Vercel** or other static/serverless hosting platforms:
+
+1. Import the repository into your Vercel Dashboard.
+2. Select **Next.js** as the framework preset.
+3. Configure the Root Directory to `portfolio`.
+4. Deploy!
