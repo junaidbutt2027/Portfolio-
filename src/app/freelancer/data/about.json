@@ -1,20 +1,40 @@
 {
   "avatarImage": "/assets/images/freelancer/about/man.png",
-  "videoUrl": "https://www.youtube.com/watch?v=pQpFebyALV0",
+  "videoUrl": "",
   "title": "About Me",
-  "subtitle": "Freelancers are known for their flexibility in work hours and location.",
-  "description": "They are responsible for all aspects of their business, from finding clients and managing projects to handling administrative tasks.",
+  "subtitle": "Java Software Engineer specializing in Spring Boot, Microservices, and scalable backend applications.",
+  "description": "Hi, I'm Junaid Javed, a passionate Java Software Engineer with over 2 years of professional experience in designing and developing scalable backend applications. I specialize in Java, Spring Boot, Spring Cloud, Microservices, REST APIs, MySQL, Redis, Kafka, Docker, and AWS. I enjoy solving complex technical challenges, building secure and high-performance systems, and continuously learning new technologies to deliver innovative software solutions.",
   "achievements": [
-    { "count": "1050+", "label": "Happy Client" },
-    { "count": "950+", "label": "Successful Projects" },
-    { "count": "750+", "label": "Complete Project" }
+    {
+      "count": "2+",
+      "label": "Years Experience"
+    },
+    {
+      "count": "20+",
+      "label": "REST APIs Developed"
+    },
+    {
+      "count": "10+",
+      "label": "Microservices Built"
+    }
   ],
   "experience": [
-    { "year": "2020-present", "role": "Sr. Developer", "company": "Google.com" },
-    { "year": "2014-2020", "role": "Chiefs of Surgery", "company": "Microsoft.com" }
+    {
+      "year": "Feb 2026 - Present",
+      "role": "Java Software Engineer",
+      "company": "EP Systems"
+    },
+    {
+      "year": "Sep 2024 - Feb 2026",
+      "role": "Java Software Engineer",
+      "company": "BitLogix"
+    }
   ],
   "education": [
-    { "year": "2013-2014", "degree": "MBA in (Management)", "school": "London Business School" },
-    { "year": "2009-2013", "degree": "BBA in (Management)", "school": "London Business School" }
+    {
+      "year": "2020 - 2024",
+      "degree": "Bachelor of Science in Computer Science (BSCS)",
+      "school": "Lahore Garrison University"
+    }
   ]
 }
