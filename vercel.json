@@ -1,6 +1,78 @@
 {
   "version": 2,
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/index",
+      "permanent": true
+    },
+    {
+      "source": "/developer.html",
+      "destination": "/developer",
+      "permanent": true
+    },
+    {
+      "source": "/freelancer.html",
+      "destination": "/freelancer",
+      "permanent": true
+    },
+    {
+      "source": "/designer.html",
+      "destination": "/freelancer",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/index#resume",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/index#resume",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/index#contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/index#contact",
+      "permanent": true
+    },
+    {
+      "source": "/service.html",
+      "destination": "/index#service",
+      "permanent": true
+    },
+    {
+      "source": "/service",
+      "destination": "/index#service",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio.html",
+      "destination": "/index#portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/index#portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/blog.html",
+      "destination": "/index#blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/index#blog",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

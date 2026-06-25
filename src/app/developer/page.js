@@ -126,27 +126,14 @@ export default function DeveloperPage() {
                                           <li><a className="smoth-animation" href="/developer#blog">Blog</a></li>
                                           <li><a className="smoth-animation" href="/developer#contact">Contact</a></li>
                                           <li><a className="smoth-animation" href="/developer#portfolio">Portfolio</a></li>
-                                          <li className="has-dropdown">
-                                              <a className="smoth-animation" href="/developer#testimonial">Pages</a>
-                                              <ul className="submenu">
-                                                  <li><a href="/about">About</a></li>
-                                                  <li><a href="/service">Service</a></li>
-                                                  <li><a href="service-details.html">Service Details</a></li>
-                                                  <li><a href="portfolio.html">Portfolio</a></li>
-                                                  <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                                  <li><a href="/blog">Blog</a></li>
-                                                  <li><a href="blog-details.html">Blog Details</a></li>
-                                                  <li><a href="/contact">Contact</a></li>
-                                              </ul>
-                                          </li>
-                                      </ul>
+                                        </ul>
                                   </nav>
                               </nav>
                               <div className="header-btn tmp-button-group d-flex align-items-center">
-                                  <a className="tmp-btn btn-border tmp-switch-btn btn-sm hover-transform-none radius-round d-none d-sm-block" href="/contact">
+                                  <a className="tmp-btn btn-border tmp-switch-btn btn-sm hover-transform-none radius-round d-none d-sm-block" href="/index#contact">
                                       <span data-text="Let’s Talk">Let’s Talk</span>
                                   </a>
-                                  <a className="tmp-btn tmp-switch-btn btn-sm hover-transform-none radius-round" href="/contact">
+                                  <a className="tmp-btn tmp-switch-btn btn-sm hover-transform-none radius-round" href="/index#contact">
                                       <span data-text="Join Now">Join Now</span>
                                   </a>
                               </div>
@@ -963,7 +950,7 @@ export default function DeveloperPage() {
                                       <p>Fuga tenetur repellendus ipsam corporis dicta nesciunt similique deserunt alias inventore tempore, pariatur odit aut, quasi delectus? Nam repellendus molestias possimus, totam blanditiis mollitia, consequatur, rem ratione voluptatum perspiciatis maxime nulla ut aliquid officia fugit consequuntur quia libero magnam! Obcaecati laudantium voluptatibus itaque voluptatem omnis. Numquam eveniet voluptas quibusdam blanditiis, quia eaque, molestiae libero, laboriosam tempora provident neque! Eligendi nostrum aut reprehenderit! Quod quo, repellat libero cum earum dolor illum dolorem, reiciendis expedita, ea itaque sunt numquam sit?</p>
                                       <div className="button-group-modal-bottom mt--40">
                                           <div className="button-group service-more-btn">
-                                              <a className="tmp-btn icon-hover radius-round btn-sm" href="portfolio-details.html">
+                                              <a className="tmp-btn icon-hover radius-round btn-sm" href={activeProject.previewLink || "/developer#contact"} target="_blank">
                                                   <span className="btn-text">VIEW PROJECT</span>
                                                   <span className="btn-icon"><i className="fa-light fa-arrow-right"></i></span>
                                               </a>
@@ -1100,8 +1087,8 @@ export default function DeveloperPage() {
                                       <p>Fuga tenetur repellendus ipsam corporis dicta nesciunt similique deserunt alias inventore tempore, pariatur odit aut, quasi delectus? Nam repellendus molestias possimus, totam blanditiis mollitia, consequatur, rem ratione voluptatum perspiciatis maxime nulla ut aliquid officia fugit consequuntur quia libero magnam! Obcaecati laudantium voluptatibus itaque voluptatem omnis. Numquam eveniet voluptas quibusdam blanditiis, quia eaque, molestiae libero.</p>
                                       <div className="button-group-modal-bottom mt--40">
                                           <div className="button-group service-more-btn">
-                                              <a className="tmp-btn icon-hover radius-round btn-sm" href="service-details.html">
-                                                  <span className="btn-text">VIEW MORE</span>
+                                              <a className="tmp-btn icon-hover radius-round btn-sm" href={activeService.previewLink || "/developer#contact"}>
+                                                  <span className="btn-text">GET STARTED</span>
                                                   <span className="btn-icon"><i className="fa-light fa-arrow-right"></i></span>
                                               </a>
                                           </div>
@@ -1133,137 +1120,6 @@ export default function DeveloperPage() {
           <a href="tel:+8801234567890">
               <i className="fa-regular fa-phone"></i>
           </a>
-      </div>
-
-      {/* Demos Drawer Area */}
-      <div className="demo-modal-area dark-version">
-          <div className="wrapper">
-              <div className="tmp-modal-inner position-relative">
-                  <div className="close-icon">
-                      <button className="demo-close-btn"><span><i className="fa-sharp fa-light fa-xmark"></i></span></button>
-                  </div>
-                  <div className="demo-top text-center">
-                      <h4 className="title">Portfolio</h4>
-                      <p className="subtitle">A personal portfolio website is your digital resume—a place to showcase your work, skills, and achievements.</p>
-                  </div>
-                  <ul className="popuptab-area nav nav-tabs" id="popuptab" role="tablist">
-                      <li className="nav-item">
-                          <a className="nav-link active demo-dark" id="demodark-tab" data-bs-toggle="tab" href="#demodark" role="tab" aria-controls="demodark" aria-selected="true">Dark Demo</a>
-                      </li>
-                      <li className="nav-item">
-                          <a className="nav-link demo-light" id="demolight-tab" data-bs-toggle="tab" href="#demolight" role="tab" aria-controls="demolight" aria-selected="false">Light Demo</a>
-                      </li>
-                      <li className="nav-item">
-                          <a className="nav-link demo-pink" id="demopink-tab" data-bs-toggle="tab" href="#demopink" role="tab" aria-controls="demopink" aria-selected="false">Pink Demo</a>
-                      </li>
-                  </ul>
-                  <div className="tab-content" id="popuptabContent">
-                      <div className="tab-pane show active" id="demodark" role="tabpanel" aria-labelledby="demodark-tab">
-                          <div className="content">
-                              <div className="row g-5">
-                                  <div className="col-lg-4 col-md-6 col-12">
-                                      <div className="single-demo">
-                                          <div className="inner">
-                                              <div className="thumbnail">
-                                                  <a target="_blank" href="/">
-                                                      <img className="w-100" src="assets/images/demo/01.webp" alt="Personal Portfolio" />
-                                                      <span className="overlay-content">
-                                                      <span className="overlay-text">View Demo <i className="feather-external-link"></i></span>
-                                                      </span>
-                                                  </a>
-                                              </div>
-                                              <div className="inner">
-                                                  <h3 className="title"><a target="_blank" href="/">Main Demo</a></h3>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div className="col-lg-4 col-md-6 col-12">
-                                      <div className="single-demo">
-                                          <div className="inner">
-                                              <div className="thumbnail">
-                                                  <a target="_blank" href="designer.html">
-                                                      <img className="w-100" src="assets/images/demo/02.webp" alt="Personal Portfolio" />
-                                                      <span className="overlay-content">
-                                                      <span className="overlay-text">View Demo <i className="feather-external-link"></i></span>
-                                                      </span>
-                                                  </a>
-                                              </div>
-                                              <div className="inner">
-                                                  <h3 className="title"><a target="_blank" href="designer.html">Designer</a></h3>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div className="col-lg-4 col-md-6 col-12">
-                                      <div className="single-demo">
-                                          <div className="inner">
-                                              <div className="thumbnail">
-                                                  <a target="_blank" href="/developer">
-                                                      <img className="w-100" src="assets/images/demo/03.webp" alt="Personal Portfolio" />
-                                                      <span className="overlay-content">
-                                                      <span className="overlay-text">View Demo <i className="feather-external-link"></i></span>
-                                                      </span>
-                                                  </a>
-                                              </div>
-                                              <div className="inner">
-                                                  <h3 className="title"><a target="_blank" href="/developer">Developer</a></h3>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div className="tab-pane" id="demolight" role="tabpanel" aria-labelledby="demolight-tab">
-                          <div className="content">
-                              <div className="row g-5">
-                                  <div className="col-lg-4 col-md-6 col-12">
-                                      <div className="single-demo">
-                                          <div className="inner">
-                                              <div className="thumbnail">
-                                                  <a target="_blank" href="index-light.html">
-                                                      <img className="w-100" src="assets/images/demo/home-1-white.webp" alt="Personal Portfolio" />
-                                                      <span className="overlay-content">
-                                                      <span className="overlay-text">View Demo <i className="feather-external-link"></i></span>
-                                                      </span>
-                                                  </a>
-                                              </div>
-                                              <div className="inner">
-                                                  <h3 className="title"><a target="_blank" href="index-light.html">Main Demo</a></h3>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div className="tab-pane" id="demopink" role="tabpanel" aria-labelledby="demopink-tab">
-                          <div className="content">
-                              <div className="row g-5">
-                                  <div className="col-lg-4 col-md-6 col-12">
-                                      <div className="single-demo">
-                                          <div className="inner">
-                                              <div className="thumbnail">
-                                                  <a target="_blank" href="index-pink.html">
-                                                      <img className="w-100" src="assets/images/demo/01-pink.webp" alt="Personal Portfolio" />
-                                                      <span className="overlay-content">
-                                                      <span className="overlay-text">View Demo <i className="feather-external-link"></i></span>
-                                                      </span>
-                                                  </a>
-                                              </div>
-                                              <div className="inner">
-                                                  <h3 className="title"><a target="_blank" href="/">Main Demo</a></h3>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
       </div>
     </>
   );

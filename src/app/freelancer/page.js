@@ -125,27 +125,14 @@ export default function FreelancerPage() {
                                             <li><a className="smoth-animation" href="/freelancer#portfolio">Portfolio</a></li>
                                             <li><a className="smoth-animation" href="/freelancer#blog">Blog</a></li>
                                             <li><a className="smoth-animation" href="/freelancer#contact">Contact</a></li>
-                                            <li className="has-dropdown">
-                                                <a href="/freelancer#" className="external">Pages</a>
-                                                <ul className="submenu">
-                                                    <li><a href="/about">About</a></li>
-                                                    <li><a href="/service">Service</a></li>
-                                                    <li><a href="service-details.html">Service Details</a></li>
-                                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                                    <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                                    <li><a href="/blog">Blog</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                    <li><a href="/contact">Contact</a></li>
-                                                </ul>
-                                            </li>
                                         </ul>
                                     </nav>
                                 </nav>
                                 <div className="header-btn tmp-button-group d-flex align-items-center">
-                                    <a className="tmp-btn btn-border tmp-switch-btn btn-sm hover-transform-none radius-round d-none d-sm-block" href="/contact">
+                                    <a className="tmp-btn btn-border tmp-switch-btn btn-sm hover-transform-none radius-round d-none d-sm-block" href="/index#contact">
                                         <span data-text="Let’s Talk">Let’s Talk</span>
                                     </a>
-                                    <a className="tmp-btn tmp-switch-btn btn-sm hover-transform-none radius-round" href="/contact">
+                                    <a className="tmp-btn tmp-switch-btn btn-sm hover-transform-none radius-round" href="/index#contact">
                                         <span data-text="Join Now">Join Now</span>
                                     </a>
                                 </div>
