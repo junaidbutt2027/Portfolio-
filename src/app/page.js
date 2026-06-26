@@ -206,7 +206,7 @@ export default function Home() {
                   <div className="content-wrapper hero-developer-portfolio">
                       <div className="shape">
                           <div className="shape-1">
-                              <img src={heroData.shapeImage1} alt="" />
+                              <img src={heroData?.shapeImage1} alt="" />
                           </div>
                           <div className="shape-2"></div>
                       </div>
@@ -216,7 +216,7 @@ export default function Home() {
                                   <div className="border-left"></div>
                                   <div className="border-right"></div>
                                   <h6 className="subtitle">
-                                      {heroData.subtitle}
+                                      {heroData?.subtitle}
                                   </h6>
                               </div>
                               <div className="tmp-social main">
@@ -227,17 +227,17 @@ export default function Home() {
                           </div>
                           <h1 className="title">
                               <span>{firstTwoWords}</span> {remainingWords} <br />
-                              {heroData.titleLine2}
+                              {heroData?.titleLine2}
                           </h1>
                           <div className="tmp-button-group">
-                              <a className="tmp-btn hover-icon-reverse radius-round" href={heroData.cvLink}>
+                              <a className="tmp-btn hover-icon-reverse radius-round" href={heroData?.cvLink}>
                                   <span className="icon-reverse-wrapper">
                                       <span className="btn-text">Download CV</span>
                                   <span className="btn-icon"><i className="fa-light fa-download"></i></span>
                                   <span className="btn-icon"><i className="fa-light fa-download"></i></span>
                                   </span>
                               </a>
-                              <a className="tmp-btn btn-border tmp-marquee-btn radius-round" href={heroData.contactLink}>
+                              <a className="tmp-btn btn-border tmp-marquee-btn radius-round" href={heroData?.contactLink}>
                                   <span data-text="Contact Me">Contact Me</span>
                               </a>
                           </div>
@@ -248,13 +248,13 @@ export default function Home() {
                       <div className="thumbnail">
                           <div className="tmp-hero-shape">
                               <div className="tmp-siback">
-                                  <img src={heroData.shapeImage2} alt="" />
+                                  <img src={heroData?.shapeImage2} alt="" />
                                   <div className="animated-dot"></div>
                               </div>
                               <div className="tmp-sib"></div>
                           </div>
                           <figure className="main-thumbnail">
-                              <img src={heroData.mainImage} alt="" />
+                              <img src={heroData?.mainImage} alt="" />
                           </figure>
                       </div>
                   </div>
@@ -1134,7 +1134,7 @@ export default function Home() {
                                           <div className="social-share-with-text">
                                               <span>Share :</span>
                                               <div className="tmp-social-default sm-size justify-content-start">
-                                                  {heroData.socials.map((social, idx) => (
+                                                  {socials.map((social, idx) => (
                                                       <a key={idx} href={social.url} target="_blank" className="tmp-social-item" aria-label={social.platform}><i className={social.icon}></i></a>
                                                   ))}
                                               </div>
