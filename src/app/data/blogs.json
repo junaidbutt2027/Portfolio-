@@ -1,26 +1,23 @@
 [
   {
-    "image": "assets/images/developer/blog/3.jpg",
-    "categories": ["Design", "Development"],
-    "readTime": "3 min read",
-    "title": "Exploring Cutting Edge Techno Learn Shaping Tomorrow"
+    "image": "assets/images/model/blog/01.webp",
+    "categories": ["Java"],
+    "readTime": "7 min read",
+    "title": "Building Scalable Microservices with Spring Boot",
+    "description": "A practical overview of developing scalable microservices using Java, Spring Boot, Spring Cloud, REST APIs, MySQL, and Microservices Architecture based on my professional experience."
   },
   {
-    "image": "assets/images/developer/blog/4.jpg",
-    "categories": ["Design", "Development"],
-    "readTime": "3 min read",
-    "title": "Design Cutting Edge Techno Learn Shaping Tomorrow"
+    "image": "assets/images/model/blog/02.webp",
+    "categories": ["FinTech"],
+    "readTime": "8 min read",
+    "title": "Developing Secure FinTech Applications with Java",
+    "description": "Sharing my experience developing secure financial applications including RAAST, IBFT, customer services, debit card transactions, and REST APIs while working as a Java Backend Engineer."
   },
   {
-    "image": "assets/images/developer/blog/1.jpg",
-    "categories": ["Design", "Development"],
-    "readTime": "3 min read",
-    "title": "Development Cutting Edge Techno Learn Shaping NextDay"
-  },
-  {
-    "image": "assets/images/developer/blog/2.jpg",
-    "categories": ["Design", "Development"],
-    "readTime": "3 min read",
-    "title": "Exploring Cutting Edge Techno Learn Shaping Tomorrow"
+    "image": "assets/images/model/blog/03.webp",
+    "categories": ["Backend"],
+    "readTime": "6 min read",
+    "title": "REST API Best Practices in Spring Boot",
+    "description": "Learn how to design secure, maintainable, and high-performance REST APIs using Spring Boot, Spring Data JPA, JWT authentication, exception handling, and clean architecture."
   }
 ]
