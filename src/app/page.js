@@ -28,6 +28,8 @@ export default function Home() {
   const hasSkillsSection = hasSkillsList || hasEducation || hasExperience;
   
   const socials = (heroData && Array.isArray(heroData.socials)) ? heroData.socials : [];
+  const emailSocial = socials.find(s => s.platform === 'email');
+  const emailAddress = emailSocial ? emailSocial.url.replace('mailto:', '') : '';
 
   useEffect(() => {
     setMounted(true);
@@ -775,51 +777,49 @@ export default function Home() {
                   </div>
                   <div className="col-lg-5 col-xl-4">
                       <div className="tmp-contact-info tmp-scroll-trigger tmp-fade-in animation-order-2">
-                          <div className="single-contact-info">
-                              <div className="tmp-icon mb-4">
-                                  <i className="fa-solid fa-headset"></i>
-                              </div>
-                              <h4 className="h5 tmp-contact-info-title fw-bold mb-3">Get Support</h4>
-                              <p className="text-small">If you want to communicate with live please <span>Skype online</span> contact me.</p>
-                              <div className="d-flex flex-column gap-1 mt-4">
-                                  <div className="tmp-action">
-                                      <span>Phone Number:</span>
-                                      <a href="tel:+880123456789">+880 123 456 789</a>
-                                  </div>
-                                  <div className="tmp-action">
-                                      <span>Phone Number:</span>
-                                      <a href="tel:+880123456789">+880 123 456 789</a>
-                                  </div>
-                              </div>
-                          </div>
-                          <div className="single-contact-info">
-                              <div className="tmp-icon mb-4">
-                                  <i className="fa-solid fa-headset"></i>
-                              </div>
-                              <h4 className="h5 tmp-contact-info-title fw-bold mb-3">Communication With Mail</h4>
-                              <p className="text-small">Please submit your email in my email and please as soon as possible.</p>
-                              <div className="d-flex flex-column gap-1 mt-4">
-                                  <div className="tmp-action">
-                                      <span>Email Address:</span>
-                                      <a href="mailto:irin@example.com">irin@example.com</a>
-                                  </div>
-                                  <div className="tmp-action">
-                                      <span>Email Address:</span>
-                                      <a href="mailto:irin@example.com">irin2@example.com</a>
-                                  </div>
-                              </div>
-                          </div>
-                          <div className="single-contact-info">
-                              <div className="tmp-icon mb-4">
-                                  <i className="fa-solid fa-headset"></i>
-                              </div>
-                              <h4 className="h5 tmp-contact-info-title fw-bold mb-3">Want to chat now</h4>
-                              <p className="text-small">Chat with me its more experts of find out more and more informative way to learn about me.</p>
-                              <button className="tmp-btn btn-sm mt--15 icon-hover radius-round">
-                                  <span className="btn-text">Open Chat With Me</span>
-                                  <span className="btn-icon"><i className="fa-sharp fa-regular fa-arrow-right"></i></span>
-                              </button>
-                          </div>
+                           {heroData?.phone && (
+                           <div className="single-contact-info">
+                               <div className="tmp-icon mb-4">
+                                   <i className="fa-solid fa-headset"></i>
+                               </div>
+                               <h4 className="h5 tmp-contact-info-title fw-bold mb-3">Get Support</h4>
+                               <p className="text-small">If you want to communicate live please contact me.</p>
+                               <div className="d-flex flex-column gap-1 mt-4">
+                                   <div className="tmp-action">
+                                       <span>Phone Number:</span>
+                                       <a href={`tel:${heroData.phone}`}>{heroData.phone}</a>
+                                   </div>
+                               </div>
+                           </div>
+                           )}
+                           {emailAddress && (
+                           <div className="single-contact-info">
+                               <div className="tmp-icon mb-4">
+                                   <i className="fa-solid fa-headset"></i>
+                               </div>
+                               <h4 className="h5 tmp-contact-info-title fw-bold mb-3">Communication With Mail</h4>
+                               <p className="text-small">Please submit your email and I will get back to you as soon as possible.</p>
+                               <div className="d-flex flex-column gap-1 mt-4">
+                                   <div className="tmp-action">
+                                       <span>Email Address:</span>
+                                       <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
+                                   </div>
+                               </div>
+                           </div>
+                           )}
+                           {heroData?.chatLink && (
+                           <div className="single-contact-info">
+                               <div className="tmp-icon mb-4">
+                                   <i className="fa-solid fa-headset"></i>
+                               </div>
+                               <h4 className="h5 tmp-contact-info-title fw-bold mb-3">Want to chat now</h4>
+                               <p className="text-small">Chat with me to find out more and discuss software ideas.</p>
+                               <a href={heroData.chatLink} target="_blank" className="tmp-btn btn-sm mt--15 icon-hover radius-round">
+                                   <span className="btn-text">Open Chat With Me</span>
+                                   <span className="btn-icon"><i className="fa-sharp fa-regular fa-arrow-right"></i></span>
+                               </a>
+                           </div>
+                           )}
                       </div>
                   </div>
               </div>
@@ -1155,11 +1155,13 @@ export default function Home() {
           </svg>
       </div>
 
-      <div className="invers-call-area-sticky like-button">
-          <a href="tel:+8801234567890">
-              <i className="fa-regular fa-phone"></i>
-          </a>
-      </div>
+       {heroData?.phone && (
+       <div className="invers-call-area-sticky like-button">
+           <a href={`tel:${heroData.phone}`}>
+               <i className="fa-regular fa-phone"></i>
+           </a>
+       </div>
+       )}
     </>
   );
 }
