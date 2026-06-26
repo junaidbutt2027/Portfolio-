@@ -17,6 +17,18 @@ export default function Home() {
   const [activeService, setActiveService] = useState(null);
   const [activeBlog, setActiveBlog] = useState(null);
 
+  const hasServices = Array.isArray(servicesData) && servicesData.length > 0;
+  const hasPortfolio = Array.isArray(portfolioData) && portfolioData.length > 0;
+  const hasBlogs = Array.isArray(blogsData) && blogsData.length > 0;
+  const hasTestimonials = testimonialsData && Array.isArray(testimonialsData.reviews) && testimonialsData.reviews.length > 0;
+  
+  const hasEducation = resumeData && Array.isArray(resumeData.education) && resumeData.education.length > 0;
+  const hasExperience = resumeData && Array.isArray(resumeData.experience) && resumeData.experience.length > 0;
+  const hasSkillsList = Array.isArray(skillsData) && skillsData.length > 0;
+  const hasSkillsSection = hasSkillsList || hasEducation || hasExperience;
+  
+  const socials = (heroData && Array.isArray(heroData.socials)) ? heroData.socials : [];
+
   useEffect(() => {
     setMounted(true);
     
@@ -29,9 +41,9 @@ export default function Home() {
       return () => clearTimeout(unmountTimer);
     }, 1000);
 
-    if (portfolioData && portfolioData.length > 0) setActiveProject(portfolioData[0]);
-    if (servicesData && servicesData.length > 0) setActiveService(servicesData[0]);
-    if (blogsData && blogsData.length > 0) setActiveBlog(blogsData[0]);
+    if (hasPortfolio) setActiveProject(portfolioData[0]);
+    if (hasServices) setActiveService(servicesData[0]);
+    if (hasBlogs) setActiveBlog(blogsData[0]);
     if (heroData && heroData.name) {
       document.title = `${heroData.name} - Personal Portfolio`;
     }
@@ -72,8 +84,8 @@ export default function Home() {
   }
 
   // Parse titleLine1 to match design styling ("I Design & Build")
-  const firstTwoWords = heroData.titleLine1.split(' ').slice(0, 2).join(' ');
-  const remainingWords = heroData.titleLine1.split(' ').slice(2).join(' ');
+  const firstTwoWords = (heroData && heroData.titleLine1) ? heroData.titleLine1.split(' ').slice(0, 2).join(' ') : '';
+  const remainingWords = (heroData && heroData.titleLine1) ? heroData.titleLine1.split(' ').slice(2).join(' ') : '';
 
   return (
     <>
@@ -121,10 +133,10 @@ export default function Home() {
                                   <nav className="navbar-example2 onepagenav">
                                       <ul className="tmp-mainmenu nav nav-pills">
                                           <li className="current"><a className="smoth-animation" href="#home">Home</a></li>
-                                          <li><a className="smoth-animation" href="#service">Services</a></li>
-                                          <li><a className="smoth-animation" href="#blog">Blog</a></li>
+                                          {hasServices && <li><a className="smoth-animation" href="#service">Services</a></li>}
+                                          {hasBlogs && <li><a className="smoth-animation" href="#blog">Blog</a></li>}
                                           <li><a className="smoth-animation" href="#contact">Contact</a></li>
-                                          <li><a className="smoth-animation" href="#portfolio">Portfolio</a></li>
+                                          {hasPortfolio && <li><a className="smoth-animation" href="#portfolio">Portfolio</a></li>}
                                         </ul>
                                   </nav>
                               </nav>
@@ -167,17 +179,17 @@ export default function Home() {
 
                   <ul className="tmp-mainmenu onepagenav-click">
                       <li><a className="smoth-animation" href="#home">Home</a></li>
-                      <li><a className="smoth-animation" href="#service">Services</a></li>
-                      <li><a className="smoth-animation" href="#portfolio">Portfolio</a></li>
-                      <li><a className="smoth-animation" href="#skill">Resume</a></li>
-                      <li><a className="smoth-animation" href="#blog">Blog</a></li>
+                      {hasServices && <li><a className="smoth-animation" href="#service">Services</a></li>}
+                      {hasPortfolio && <li><a className="smoth-animation" href="#portfolio">Portfolio</a></li>}
+                      {hasSkillsSection && <li><a className="smoth-animation" href="#skill">Resume</a></li>}
+                      {hasBlogs && <li><a className="smoth-animation" href="#blog">Blog</a></li>}
                       <li><a className="smoth-animation" href="#contact">Contact</a></li>
                   </ul>
 
                   <div className="social-wrapper mt--40">
                       <span className="subtitle">find with me</span>
                       <div className="social-link">
-                          {heroData.socials.map((social, idx) => (
+                          {socials.map((social, idx) => (
                               <a key={idx} href={social.url} target="_blank" aria-label={social.platform}><i className={social.icon}></i></a>
                           ))}
                       </div>
@@ -208,7 +220,7 @@ export default function Home() {
                                   </h6>
                               </div>
                               <div className="tmp-social main">
-                                  {heroData.socials.map((social, idx) => (
+                                  {socials.map((social, idx) => (
                                       <a key={idx} href={social.url} target="_blank" className="tmp-social-item" aria-label={social.platform}><i className={social.icon}></i></a>
                                   ))}
                               </div>
@@ -252,6 +264,7 @@ export default function Home() {
       {/* hero section end */}
 
       {/* service section */}
+      {hasServices && (
       <section className="tmp-section developer-service-bg fix tmp-section-gap" id="service">
           <div className="container">
               <div className="row justify-content-center">
@@ -291,9 +304,11 @@ export default function Home() {
               </div>
           </div>
       </section>
+      )}
       {/* service section end */}
 
       {/* work section */}
+      {hasPortfolio && (
       <section className="tmp-section tmp-developer-work tmp-section-gap" id="portfolio">
           <div className="container">
               <div className="row justify-content-center">
@@ -439,9 +454,11 @@ export default function Home() {
               </div>
           </div>
       </section>
+      )}
       {/* work section end */}
 
       {/* skill section */}
+      {hasSkillsSection && (
       <div className="tmp-section tmp-section-gapBottom" id="skill">
           <div className="container">
               <div className="row justify-content-center">
@@ -458,6 +475,7 @@ export default function Home() {
                       </div>
                   </div>
               </div>
+              {hasSkillsList && (
               <div className="row mb--60 g-5">
                   {skillsData.map((skill, idx) => (
                       <div key={idx} className={`col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 tmp-scroll-trigger tmp-fade-in animation-order-${idx + 1}`}>
@@ -479,8 +497,11 @@ export default function Home() {
                       </div>
                   ))}
               </div>
+              )}
+              {(hasEducation || hasExperience) && (
               <div className="row g-5 invers-arrange-container">
-                  <div className="col-lg-6 invers-arrange-item">
+                  {hasEducation && (
+                  <div className={`col-lg-${hasExperience ? "6" : "12"} invers-arrange-item`}>
                       <div className="tmp-skill-full">
                           <div className="tmp-skill-shape"></div>
                           <div className="tmp-skill-full-inner">
@@ -490,13 +511,15 @@ export default function Home() {
                                       <span className="tmp-skill-year">{edu.year}</span>
                                       <h4 className="h5 tmp-skill-name fw-bold">{edu.name}</h4>
                                       <p className="tmp-skill-program text-small mb-0">{edu.program}</p>
-                                      <span className="tmp-skill-grade">{edu.grade}</span>
+                                      {edu.grade && <span className="tmp-skill-grade">{edu.grade}</span>}
                                   </div>
                               ))}
                           </div>
                       </div>
                   </div>
-                  <div className="col-lg-6 invers-arrange-item">
+                  )}
+                  {hasExperience && (
+                  <div className={`col-lg-${hasEducation ? "6" : "12"} invers-arrange-item`}>
                       <div className="tmp-skill-full">
                           <div className="tmp-skill-shape"></div>
                           <div className="tmp-skill-full-inner">
@@ -506,18 +529,22 @@ export default function Home() {
                                       <span className="tmp-skill-year">{exp.year}</span>
                                       <h4 className="h5 tmp-skill-name fw-bold">{exp.name}</h4>
                                       <p className="tmp-skill-program text-small mb-0">{exp.program}</p>
-                                      <span className="tmp-skill-grade">{exp.grade}</span>
+                                      {exp.grade && <span className="tmp-skill-grade">{exp.grade}</span>}
                                   </div>
                               ))}
                           </div>
                       </div>
                   </div>
+                  )}
               </div>
+              )}
           </div>
       </div>
+      )}
       {/* skill section end */}
 
       {/* testimonial section */}
+      {hasTestimonials && (
       <section className="tmp-section" id="testimonial">
           <div className="ps-100 ps_sm--20">
               <div className="container-fluid">
@@ -540,12 +567,12 @@ export default function Home() {
                           <div className="testimonial-modern-left-card">
                               <div className="image">
                                   <figure>
-                                      <img src={testimonialsData.summary.image} width="515" alt="" />
+                                      <img src={testimonialsData.summary?.image} width="515" alt="" />
                                   </figure>
                               </div>
                               <div className="content">
-                                  <h3 className="h5 rating">{testimonialsData.summary.rating}</h3>
-                                  <p className="desc" dangerouslySetInnerHTML={{ __html: testimonialsData.summary.description.replace('\n', '<br />') }} />
+                                  <h3 className="h5 rating">{testimonialsData.summary?.rating}</h3>
+                                  <p className="desc" dangerouslySetInnerHTML={{ __html: (testimonialsData.summary?.description || '').replace('\n', '<br />') }} />
                                   <div className="tmp-slider-control mt-4">
                                       <div className="tmp-prev">
                                           <i className="fa-light fa-chevron-left"></i>
@@ -580,12 +607,12 @@ export default function Home() {
                                               <div className="tmp-testimonial-author">
                                                   <div className="author-image">
                                                       <figure>
-                                                          <img src={review.author.image} alt="" />
+                                                          <img src={review.author?.image} alt="" />
                                                       </figure>
                                                   </div>
                                                   <div className="author-content">
-                                                      <h4 className="h6 author-name fw-bold">{review.author.name}</h4>
-                                                      <span className="author-job">{review.author.designation}</span>
+                                                      <h4 className="h6 author-name fw-bold">{review.author?.name}</h4>
+                                                      <span className="author-job">{review.author?.designation}</span>
                                                   </div>
                                               </div>
                                               <div className="tmp-right-shadow"></div>
@@ -599,6 +626,7 @@ export default function Home() {
               </div>
           </div>
           {/* client section */}
+          {Array.isArray(testimonialsData.brands) && testimonialsData.brands.length > 0 && (
           <div className="tmp-section pt--60">
               <div className="container">
                   <div className="row g-5">
@@ -614,11 +642,14 @@ export default function Home() {
                   </div>
               </div>
           </div>
+          )}
           {/* client section end */}
       </section>
+      )}
       {/* testimonial section end */}
 
       {/* blog section */}
+      {hasBlogs && (
       <section className="tmp-section tmp-section-gap" id="blog">
           <div className="container">
               <div className="row justify-content-center">
@@ -647,7 +678,7 @@ export default function Home() {
                               <div className="content">
                                   <div className="d-flex flex-wrap justify-content-between align-items-center mb-5 gap-4">
                                       <div className="d-flex gap-3">
-                                          {blog.categories.map((cat, catIdx) => (
+                                          {Array.isArray(blog.categories) && blog.categories.map((cat, catIdx) => (
                                               <a key={catIdx} href="#" aria-label={cat} className={`tmp-badge-cat ${catIdx === 1 ? 'cat-two' : ''}`}>{cat}</a>
                                           ))}
                                       </div>
@@ -665,6 +696,7 @@ export default function Home() {
               </div>
           </div>
       </section>
+      )}
       {/* blog section end */}
 
       {/* contact section */}
@@ -839,7 +871,7 @@ export default function Home() {
                                               </div>
                                           </div>
                                           <div className="bottom-footer-area">
-                                              <p>© <span id="year" suppressHydrationWarning={true}>{new Date().getFullYear()}</span> <a className="hover-moving-primary" href="/#">{heroData.name}</a> All rights reserved.</p>
+                                              <p>© <span id="year" suppressHydrationWarning={true}>{new Date().getFullYear()}</span> <a className="hover-moving-primary" href="/#">{heroData?.name}</a> All rights reserved.</p>
                                               <div className="logo">
                                                   <a href="/">
                                                       <img className="logo-dark" src="/assets/images/logo/main-logo.svg" alt="logo" />
@@ -875,7 +907,7 @@ export default function Home() {
               <button type="button" className="tmp-close" data-bs-dismiss="offcanvas" aria-label="Close"><i className="fa fa-xmark"></i></button>
           </div>
           <p className="tmp-offcanvas-desc">
-              {heroData.description}
+              {heroData?.description}
           </p>
           <div className="hr my-3"></div>
           <div className="offcanvas-body p-0">
@@ -885,21 +917,31 @@ export default function Home() {
                           <li className="navigation-menu--item">
                               <a href="#home" className="navigation-menu--item-link">Home</a>
                           </li>
-                          <li className="navigation-menu--item">
-                              <a href="#service" className="navigation-menu--item-link">Services</a>
-                          </li>
-                          <li className="navigation-menu--item">
-                              <a href="#portfolio" className="navigation-menu--item-link">Portfolio</a>
-                          </li>
-                          <li className="navigation-menu--item">
-                              <a href="#skill" className="navigation-menu--item-link">My Skill</a>
-                          </li>
-                          <li className="navigation-menu--item">
-                              <a href="#testimonial" className="navigation-menu--item-link">Testimonial</a>
-                          </li>
-                          <li className="navigation-menu--item">
-                              <a href="#blog" className="navigation-menu--item-link">blog</a>
-                          </li>
+                          {hasServices && (
+                              <li className="navigation-menu--item">
+                                  <a href="#service" className="navigation-menu--item-link">Services</a>
+                              </li>
+                          )}
+                          {hasPortfolio && (
+                              <li className="navigation-menu--item">
+                                  <a href="#portfolio" className="navigation-menu--item-link">Portfolio</a>
+                              </li>
+                          )}
+                          {hasSkillsSection && (
+                              <li className="navigation-menu--item">
+                                  <a href="#skill" className="navigation-menu--item-link">My Skill</a>
+                              </li>
+                          )}
+                          {hasTestimonials && (
+                              <li className="navigation-menu--item">
+                                  <a href="#testimonial" className="navigation-menu--item-link">Testimonial</a>
+                              </li>
+                          )}
+                          {hasBlogs && (
+                              <li className="navigation-menu--item">
+                                  <a href="#blog" className="navigation-menu--item-link">blog</a>
+                              </li>
+                          )}
                           <li className="navigation-menu--item">
                               <a href="#contact" className="navigation-menu--item-link">Contact</a>
                           </li>
@@ -955,7 +997,7 @@ export default function Home() {
                                           <div className="social-share-with-text">
                                               <span>Share :</span>
                                               <div className="tmp-social-default sm-size justify-content-start">
-                                                  {heroData.socials.map((social, idx) => (
+                                                  {socials.map((social, idx) => (
                                                       <a key={idx} href={social.url} target="_blank" className="tmp-social-item" aria-label={social.platform}><i className={social.icon}></i></a>
                                                   ))}
                                               </div>
